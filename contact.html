@@ -13,12 +13,35 @@
         <div class="main-wrapper">
             <div class="navbar border">
                 <div class="hint"> Leo Jenkins</div>
-                <div class="navbar-items">
-                    <a href="index.html">About</a>
-                    <a href="project.html">Projects</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Resume</a>
-                    <a href="contact.html">Contact</a>
+                <div class="navbar-actions">
+                    <div class="navbar-items">
+                        <a href="index.html#about">About</a>
+                        <a href="index.html#projects">Projects</a>
+                        <a href="index.html#skills">Skills</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mobile-menu-overlay" hidden>
+                <div class="mobile-menu-panel">
+                    <div class="mobile-menu-top">
+                        <span class="mobile-menu-title">Leo Jenkins</span>
+                        <button class="nav-close" aria-label="Close menu">×</button>
+                    </div>
+                    <div class="mobile-menu-links">
+                        <a href="index.html">Home</a>
+                        <a href="index.html#about">About</a>
+                        <a href="index.html#projects">Projects</a>
+                        <a href="index.html#skills">Skills</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <!-- mobile nav was generated with ai -->
                 </div>
             </div>
 
@@ -75,6 +98,93 @@
                 <div class="hint">by Albert Einstein</div>
             </section>
         </div>
+        <div class="footer">
+            <div class="footer-shadow"></div>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-heading"><strong>Leo Jenkins</strong></div>
+                    <div class="footer-text">
+                        <p>University of Waterloo</p>
+                        <p>GBDA</p>
+                        <p>Term 2A</p>
+                        <p>&nbsp;</p>
+                        <p>Copyright Leo Jenkins 2025</p>
+                        <p>All rights reserved</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-heading"><strong>Quick Links</strong></div>
+                    <div class="footer-text">
+                        <a href="index.html">Home</a>
+                        <a href="index.html#about">About</a>
+                        <a href="index.html#projects">Projects</a>
+                        <a href="index.html#skills">Skills</a>
+                        <p>&nbsp;</p>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-heading"><strong>Contact</strong></div>
+                    <div class="footer-text">
+                        <a href="mailto:l2jenkin@uwaterloo.ca">l2jenkin@uwaterloo.ca</a>
+                        <a href="mailto:leo@outdone.ca">leo@outdone.ca</a>
+                        <a href="mailto:leo@trpmaintenance.com">leo@trpmaintenance.com</a>
+                        <p>&nbsp;</p>
+                        <a href="tel:+1-888-515-8524">+1 888 515 8524</a>
+                        <p>&nbsp;</p>
+                        <p>By contacting Leo Jenkins, you agree to <a href="https://outdone.ca/terms">terms</a> and <a href="https://outdone.ca/privacy">privacy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            (function() {
+                const navToggle = document.querySelector('.nav-toggle');
+                const menuOverlay = document.querySelector('.mobile-menu-overlay');
+                const closeBtn = document.querySelector('.nav-close');
+                const links = menuOverlay ? menuOverlay.querySelectorAll('a') : [];
+
+                if (!navToggle || !menuOverlay || !closeBtn) return;
+
+                const openMenu = () => {
+                    menuOverlay.hidden = false;
+                    menuOverlay.classList.add('active');
+                    navToggle.setAttribute('aria-expanded', 'true');
+                    document.body.style.overflow = 'hidden';
+                };
+
+                const closeMenu = () => {
+                    menuOverlay.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                    setTimeout(() => {
+                        menuOverlay.hidden = true;
+                    }, 150);
+                };
+
+                navToggle.addEventListener('click', () => {
+                    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+                    expanded ? closeMenu() : openMenu();
+                });
+
+                closeBtn.addEventListener('click', closeMenu);
+
+                menuOverlay.addEventListener('click', (event) => {
+                    if (event.target === menuOverlay) {
+                        closeMenu();
+                    }
+                });
+
+                links.forEach((link) => {
+                    link.addEventListener('click', closeMenu);
+                });
+
+                window.addEventListener('resize', () => {
+                    if (window.innerWidth > 768) {
+                        closeMenu();
+                    }
+                });
+            })();
+        </script>
     </body>
 </html>
-
