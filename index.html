@@ -1,11 +1,403 @@
 <!DOCTYPE html>
 
-<html>
-<head>
-  <title>Leo Jenkins - Home</title>
+<html lang="en-CA">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home - Leo Jenkins</title>
+        <!-- created by leo jenkins for gbda 228-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=IBM+Plex+Serif:ital,wght@0,300;1,300&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
 
-</head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="navbar border">
+            <div class="hint"> Leo Jenkins</div>
+            <div class="navbar-actions">
+                <div class="navbar-items">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            </div>
+
+            <div class="mobile-menu-overlay" hidden>
+                <div class="mobile-menu-panel">
+                    <div class="mobile-menu-top">
+                        <span class="mobile-menu-title">Leo Jenkins</span>
+                        <button class="nav-close" aria-label="Close menu">×</button>
+                    </div>
+                    <div class="mobile-menu-links">
+                        <a href="index.html">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#skills">Skills</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <!-- mobile nav was generated with ai -->
+                </div>
+            </div>
+
+            <div class="hero border">
+                <div class="hint red" id="first-row">
+                </div>
+                <div id="second-row">
+                    <div id="first-col">
+                        <div class="body-hero">Hello, I'm</div>
+                        <div class="main-hero">Leo Jenkins,<br>Designer</div>
+                        <div class="body-hero">GBDA, University Of Waterloo<br>Calgary - Waterloo - Kingston</div>
+                    </div>
+                    <div id="second-col">
+                        <div id="box1"></div>
+                        <div id="box2"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="quote border">
+                <div class="hint">a quote I live my life by:</div>
+                <div id="row"><img src="https://cdn.leojenkins.ca/portfolio/Ellipse%203%20Portfolio%20Mockup.svg" />
+                    
+                        <div class="body-hero">“ I have no special talent, I am only passionately curious” </div>
+                        
+                    
+                
+                </div>
+                                    <div class="hint">by Albert Einstein</div>
+
+            </div>
+
+<div id="about" class="about p-130 border">
+                <div id="col1">
+                    <div class="hint red">i'm pretty boring lol</div>
+                    <h2>About Me</h2>
+                    <!-- Codex generated: About text wrapper and show-more structure -->
+                    <div class="about-text-section">
+                        <div class="about-body-wrapper">
+                            <div class="about-body">
+                                <p>I’ve always been someone who likes making things. When I was younger it was random projects, little experiments, videos, small businesses with friends, anything that let me build something from nothing. I grew up in Calgary so most of my life outside of work and school has been spent around mountains, driving out to Kananaskis, hanging out with friends, and trying to squeeze in time outdoors whenever I can. I like road trips, late night work sessions, and finding ways to make ideas feel real. I’ve always leaned toward design, tech, and anything that feels a bit entrepreneurial, even before I knew what any of those things actually meant. </p>
+                                <p>As I got older, that turned into a weird mix of interests. brand design, web layouts, marketing psychology, fast websites, cleaner systems, and honestly just making things that look good and work properly. I love good typography, quiet design, and anything that feels intentional. I also like understanding how things function behind the scenes. it’s satisfying to build something that feels simple to the user but has a full engine running underneath it.</p>
+                                <p>I’m in GBDA at the University of Waterloo now, and most of what I do there connects back to the stuff I already loved building. I get to study design, tech, UX, media, business, and use every project as an excuse to create something real instead of just completing an assignment.</p>
+                            </div>
+                            <div class="about-gradient-overlay"></div>
+                        </div>
+                        <div class="about-show-more">
+                            <button id="show-more-btn" class="text-hint" style="font-size: 16px; text-decoration: underline; background: none; border: none; padding: 0; cursor: pointer; font-family: inherit;">show more</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="col2">
+                    <div class="about-images">
+            <div class="about-main-image">
+              <img id="about-main-img" src="" alt="About me" />
+            </div>
+            <div class="about-thumbnails">
+              <div class="about-thumbnail about-thumbnail-active" data-image-name="about-1.jpg">
+                <img src="https://cdn.leojenkins.ca/cdn-cgi/image/width=600,height=600,fit=cover/portfolio/about-1.jpg" alt="Thumbnail 1" />
+              </div>
+              <div class="about-thumbnail" data-image-name="about-2.jpg">
+                <img src="https://cdn.leojenkins.ca/cdn-cgi/image/width=600,height=600,fit=cover/portfolio/about-2.jpg" alt="Thumbnail 2" />
+              </div>
+              <div class="about-thumbnail" data-image-name="about-3.jpg">
+                <img src="https://cdn.leojenkins.ca/cdn-cgi/image/width=600,height=600,fit=cover/portfolio/about-3.jpg" alt="Thumbnail 3" />
+              </div>
+              <div class="about-thumbnail" data-image-name="about-4.png">
+                <img src="https://cdn.leojenkins.ca/cdn-cgi/image/width=600,height=600,fit=cover/portfolio/about-4.png" alt="Thumbnail 4" />
+              </div>
+            </div>
+          </div>
+
+                </div>
+                <div class="navbar-items" style="justify-content: start;">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+            </div>
+
+            <div id="projects" class="design p-130 border">
+                <div class="hint red">i'm really proud of these icl</div>
+                <h2>Design Projects</h2>
+                <p>A few things I am proud of. These projects show how I mix strategy, design, systems and real business outcomes. Every single project aims to solve a real business problem through some marketing or sales method.</p>
+
+                <div class="scrollcontent">
+                    <div class="card">
+                       <div class="image-wrapper"><img src="https://cdn.leojenkins.ca/portfolio/design-2.png" alt="A laptop mockup of a website" class="card-image"/></div>
+                        <div class="card-content">
+                            <div class="card-title">Homescapes Website Redesign</div>
+                            <p>A full redesign of Calgary Design Build company website with new page flows, reworked information architecture, stronger calls to action, updated branding and a more trust driven experience. I integrated social proof into their content, improved conversion flows and built a design that feels more modern.</p>
+                            <a href="project.html">Read more about this</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                         <div class="image-wrapper"><img src="https://cdn.leojenkins.ca/portfolio/design-7.png" alt="A laptop mockup of a website" class="card-image"/></div>
+                        <div class="card-content">
+                            <div class="card-title">Rentify App Design</div>
+                            <p>A GBDA 210 project that compromised of doing initial user research, low to high fidelity prototypes and user testing. Developed a full working prototyped app using figma in a group project under a very specific deadline. </p>
+                            
+                        </div>
+                    </div><div class="card">
+                         <div class="image-wrapper"><img src="https://cdn.leojenkins.ca/portfolio/design-4.png" alt="A laptop mockup of a website" class="card-image"/></div>
+                        <div class="card-content">
+                            <div class="card-title">Tarps Off Yard Works Promo Website</div>
+                            <p>A simple and fast brand build for a small Calgary service business. Clear service breakdown, clean branding, direct copy and a layout that guides users through offer social proof, and contact. Includes a custom front end price calculator. Launched alongside an ad strategy through Meta Ads and a project gallery.</p>
+                            
+                        </div>
+                    </div><div class="card">
+                         <div class="image-wrapper"><img src="https://cdn.leojenkins.ca/portfolio/design-5.png" alt="A laptop mockup of a website" class="card-image"/></div>
+                        <div class="card-content">
+                            <div class="card-title">Magazine Design</div>
+                            <p>A print and digital magazine project built through GBDA. Focus on art direction, typography, page rhythm, and visual storytelling. This project shows my design range outside of web and performance work.</p>
+                            <a href="https://images.outdone.ca/Jenkins_Leo_A4-print-file.pdf" >Read more about this</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="skills" class="design p-130 border">
+                <div class="hint red">important personality qualities</div>
+                <h2>Additional Skills</h2>
+                <p>I spend a lot of time developing additional skills that will help me when I work on projects. These are the reason that my projects work the way they do. </p>
+                <div class="scrollcontent">
+                    <div class="card">
+                       <div class="image-wrapper"><img src="https://cdn.leojenkins.ca/portfolio/skills-1.png" alt="A laptop mockup of a website" class="card-image"/></div>
+                        <div class="card-content">
+                            <div class="card-title">Web Development Skills</div>
+                            <p>I’ve built fast and clean websites with tools like Flask, NextJS, React, Shadcn UI, Tailwind CSS, Firebase, Supabase and python backends. I care about performance, auth flows, and a clean front end.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                         <div class="image-wrapper"><img src="https://cdn.leojenkins.ca/portfolio/skills-2.png" alt="A laptop mockup of a website" class="card-image"/></div>
+                        <div class="card-content">
+                            <div class="card-title">Figma Prototyping and Mockups</div>
+                            <p>High fidelity prototypes, ux flows, low fidelity wireframes, tested layouts and iterative design. I build prototypes that translate directly into development.</p>
+                        </div>
+                    </div><div class="card">
+                         <div class="image-wrapper"><img src="https://cdn.leojenkins.ca/portfolio/skills-3.png" alt="A laptop mockup of a website" class="card-image"/></div>
+                        <div class="card-content">
+                            <div class="card-title">Service marketing with Meta Ads</div>
+                            <p>I have ran hundreds of ads for service businesses across Canada. Services include commercial construction, remodelling, landscape maintenance, pressure washing, cleaning, commercial maintenance and more.</p>
+                        </div>
+                    </div><div class="card">
+                         <div class="image-wrapper"><img src="https://cdn.leojenkins.ca/portfolio/skills-4.png" alt="A laptop mockup of a website" class="card-image"/></div>
+                        <div class="card-content">
+                            <div class="card-title">CRMS and N8N Automations</div>
+                            <p>Over the years I have worked with several CRM platforms that have handled millions worth of projects. I used GoHighLevel, Airtable and more but currently use and maintain a custom CRM specially built for my clients. Through this time I have developed AI Agents and many automations with N8N</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="design p-130 border">
+                <div class="hint red">probably why i’ll drop out</div>
+                <h2>Businesses</h2>
+                <p>These are my passion projects that started as ideas and turned into real long term operations.</p>
+                
+                <div class="biz-section">
+                    <div id="biz1" class="biz">
+                        <img src="https://cdn.leojenkins.ca/portfolio/outdone-logo.png" style="width: 210px;height: 70px;"/>
+                        <p>A digital marketing and automation agency built for service businesses. We run ads, build CRMS, setup N8N automations, creative voice and chat agents, and help small - medium business scale without hiring more staff.</p>
+                        <img src="https://cdn.leojenkins.ca/cdn-cgi/image/height=312/portfolio/outdone-mockup.png" />
+                        <div class="biz-contact"><a href="mailto:leo@outdone.ca">leo@outdone.ca</a> | <a href="outdone.ca">outdone.ca</a></div>
+                    </div>
+                    <div id="biz2" class="biz">
+                                                <img src="https://cdn.leojenkins.ca/portfolio/trp-logo.png" style="width: 268px;height: 70px;"/>
+                        <p>A Calgary pressure washing and exterior maintenance brand. I built the brand, website, funnels, content and creatives. It runs with a mix of Meta Ads, Google Ads and a fully custom CRM system with automated follow ups. Services are fulfilled entirely by subcontractors and communications are managed with AI. </p>
+                        <img src="https://cdn.leojenkins.ca/cdn-cgi/image/height=312/portfolio/trp-mockup.png" />
+                        <div class="biz-contact"><a href="mailto:leo@trpmaintenance.com">leo@trpmaintenance.com</a> | <a href="trpmaintenance.com">trpmaintenance.com</a></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="university p-130">
+                <div class="hint red">probably why I haven’t dropped out</div>
+                <h2 class="university-title">University of Waterloo</h2>
+                <p class="university-body">I study Global Business and Digital Arts at the University of Waterloo. My coursework covers design, development, media, research, economics, UX and business strategies. I use every project as a chance to build something real. My current terms is going well, and I have a Co-op scheduled for Fall 2026.</p>
+                <p class="hint university-contact">If you’re an employer please don’t hesitate to <a href="mailto:leo@leojenkins.ca">contact me</a></p>
+                <div class="university-grid">
+                    <div class="stat">
+                        <div class="stat-heading">2A</div>
+                        <div class="stat-label">Current Term</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-heading">GBDA</div>
+                        <div class="stat-label">Program</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-heading">Microeconomics</div>
+                        <div class="stat-label">Minor</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-heading">96%</div>
+                        <div class="stat-label">Grade Average</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-heading">Zero</div>
+                        <div class="stat-label">Classes Missed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-heading">Fall 2026</div>
+                        <div class="stat-label">Next Co-op</div>
+                    </div>
+                </div>
+                <div class="university-note">
+                    <p>If you’re an employer and want someone who can design build and execute across multiple disciplines, I’m always open to hearing what positions you’re looking for.</p>
+                    <p>I am especially interested in working with startups and building the next big thing!</p>
+                </div>
+            </div>
+
+        </div>
 
 
+        <div class="footer">
+            <div class="footer-shadow"></div>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-heading"><strong>Leo Jenkins</strong></div>
+                    <div class="footer-text">
+                        <p>University of Waterloo</p>
+                        <p>GBDA</p>
+                        <p>Term 2A</p>
+                        <p>&nbsp;</p>
+                        <p>Copyright Leo Jenkins 2025</p>
+                        <p>All rights reserved</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-heading"><strong>Quick Links</strong></div>
+                    <div class="footer-text">
+                        <a href="index.html">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#skills">Skills</a>
+                        <p>&nbsp;</p>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-heading"><strong>Contact</strong></div>
+                    <div class="footer-text">
+                        <a href="mailto:l2jenkin@uwaterloo.ca">l2jenkin@uwaterloo.ca</a>
+                        <a href="mailto:leo@outdone.ca">leo@outdone.ca</a>
+                        <a href="mailto:leo@trpmaintenance.com">leo@trpmaintenance.com</a>
+                        <p>&nbsp;</p>
+                        <a href="tel:+1-888-515-8524">+1 888 515 8524</a>
+                        <p>&nbsp;</p>
+                        <p>By contacting Leo Jenkins, you agree to <a href="https://outdone.ca/terms">terms</a> and <a href="https://outdone.ca/privacy">privacy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            (function() {
+                const navToggle = document.querySelector('.nav-toggle');
+                const menuOverlay = document.querySelector('.mobile-menu-overlay');
+                const closeBtn = document.querySelector('.nav-close');
+                const links = menuOverlay ? menuOverlay.querySelectorAll('a') : [];
 
+                if (!navToggle || !menuOverlay || !closeBtn) return;
+
+                const openMenu = () => {
+                    menuOverlay.hidden = false;
+                    menuOverlay.classList.add('active');
+                    navToggle.setAttribute('aria-expanded', 'true');
+                    document.body.style.overflow = 'hidden';
+                };
+
+                const closeMenu = () => {
+                    menuOverlay.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                    setTimeout(() => {
+                        menuOverlay.hidden = true;
+                    }, 150);
+                };
+
+                navToggle.addEventListener('click', () => {
+                    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+                    expanded ? closeMenu() : openMenu();
+                });
+
+                closeBtn.addEventListener('click', closeMenu);
+
+                menuOverlay.addEventListener('click', (event) => {
+                    if (event.target === menuOverlay) {
+                        closeMenu();
+                    }
+                });
+
+                links.forEach((link) => {
+                    link.addEventListener('click', closeMenu);
+                });
+
+                window.addEventListener('resize', () => {
+                    if (window.innerWidth > 768) {
+                        closeMenu();
+                    }
+                });
+            })();
+        </script>
+        <!-- Codex generated: About interactions (show more + image switcher) -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const showMoreBtn = document.getElementById('show-more-btn');
+                const aboutTextSection = document.querySelector('.about-text-section');
+
+                if (showMoreBtn && aboutTextSection) {
+                    showMoreBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        aboutTextSection.classList.toggle('expanded');
+                    });
+                }
+
+                const mainImage = document.getElementById('about-main-img');
+                const thumbnails = document.querySelectorAll('.about-thumbnail');
+
+                function buildImageUrl(imageName) {
+                    return `https://cdn.leojenkins.ca/cdn-cgi/image/width=400,height=400,fit=cover/portfolio/${imageName}`;
+                }
+
+                const activeThumbnail = document.querySelector('.about-thumbnail-active');
+                if (activeThumbnail && mainImage) {
+                    const initialImageName = activeThumbnail.getAttribute('data-image-name');
+                    if (initialImageName) {
+                        mainImage.src = buildImageUrl(initialImageName);
+                    }
+                }
+
+                if (mainImage && thumbnails.length > 0) {
+                    thumbnails.forEach(function(thumbnail) {
+                        thumbnail.addEventListener('click', function() {
+                            thumbnails.forEach(function(thumb) {
+                                thumb.classList.remove('about-thumbnail-active');
+                            });
+
+                            thumbnail.classList.add('about-thumbnail-active');
+
+                            const imageName = thumbnail.getAttribute('data-image-name');
+                            if (imageName) {
+                                mainImage.src = buildImageUrl(imageName);
+                            }
+                        });
+                    });
+                }
+            });
+        </script>
+    </body>
 </html>
